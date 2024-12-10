@@ -12,23 +12,22 @@ export default function ProductCard2() {
           </p>
         </div>
 
-        <div className="flex justify-between">
-          {Data.map((item) => {
+        <div className="flex justify-between flex-wrap">
+          {Data.map((item,i) => {
             return (
               <>
-                <div className="flex flex-col gap-2 ">
-                  <div className="flex ">
-                    <div className="border-[1px] border-[#4a37379d] p-2">
-                      <div className="flex justify-between">
-                        <img src={item.icon} alt="" />
-                        <p className="py-1 px-2 text-[10px] bg-[#e9e4e4] ">
-                          {item.text1}
-                        </p>
-                      </div>
-
-                      <img src={item.img} alt="" />
+                <div className="flex flex-col gap-2 border-[1px] border-[#4a37379d] p-2 w-96 " key={i}>
+                  <div className=" p-2">
+                    <div className="flex justify-between">
+                      <img src={item.icon} alt="" />
+                      <p className="py-1 px-2 text-[10px] bg-[#e9e4e4] ">
+                        {item.text1}
+                      </p>
                     </div>
                   </div>
+
+                  <img src={item.img} alt="" />
+
                   <div className="flex flex-col justify-between">
                     <div className="flex justify-between">
                       <p>{item.text2}</p>

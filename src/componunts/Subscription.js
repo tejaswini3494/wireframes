@@ -14,10 +14,10 @@ export default function Subscription() {
         </div>
 
         <div className="flex items-center  justify-center gap-4 ">
-          {Data.map((item) => {
+          {Data.map((item,i) => {
             return (
               <>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2" key={i}>
                   <div className="flex items-center gap-2">
                     <img src={item.icon} alt="" />
                     <p className="w-32 h-[1px] text-[#667482] bg-[#667482] "></p>

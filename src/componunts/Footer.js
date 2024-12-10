@@ -3,19 +3,19 @@ import Data from "@/utils/Data4";
 export default function Footer() {
   return (
     <>
-      <div className="flex py-16 gap-6   justify-between">
+      <div className="flex py-16 gap-6   justify-between flex-wrap">
         
 <div className="flex gap-5">
 
     <img src="Group.svg" alt="" />
 
 
-<div className="flex gap-8 ">
+<div className="flex gap-8 flex-wrap ">
 {
-    Data.map((item)=>{
+    Data.map((item,i)=>{
         return (
             <>
-             <div className="flex flex-col">
+             <div className="flex flex-col gap-2" key={i}>
         <h4 className="text-[18px] font-medium">{item.heading}</h4>
         <p className="text-[14px]">{item.text1}</p>
         <p className="text-[14px]">{item.text2}</p>

@@ -5,7 +5,7 @@ export default function SingleProduct() {
 
   return (
     <>
-      <div className="flex pt-11 gap-4">
+      <div className="flex pt-11 gap-4  flex-col sm:flex-row">
         {/* Left Side Product */}
         <div>
           <div className="flex">

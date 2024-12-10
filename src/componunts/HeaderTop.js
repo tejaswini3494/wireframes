@@ -1,7 +1,7 @@
 export default function HeaderTop() {
   return (
     <>
-      <div className="flex justify-between items-center pt-7 ">
+      <div className="flex justify-between items-center pt-7 flex-wrap">
         <div className="flex  gap-2">
           <img src="Group.svg" alt="" />
 

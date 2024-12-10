@@ -3,7 +3,7 @@
 export default function Offer() {
   return (
     <>
-      <div className="flex gap-4 pt-16 justify-between">
+      <div className="flex gap-4 pt-16 justify-between flex-col sm:flex-row">
         <img src="BUFFET_037 1.svg" alt="" className="rounded-2xl w-[600px]" />
 
         <div className="rounded-2xl bg-zinc-200 p-4 flex flex-col justify-between ">
