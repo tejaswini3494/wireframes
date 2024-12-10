@@ -15,7 +15,7 @@ export default function ProductCard1() {
           {Data.map((item,i) => {
             return (
               <>
-                <div className="flex flex-col gap-2 border-[1px] border-[#4a37379d] p-2 w-60 " key={i}>
+                <div className="flex flex-col gap-2 border-[1px] border-[#4a37379d] p-2 w-66 " key={i}>
                   <div className=" p-2">
                     <div className="flex justify-between">
                       <img src={item.icon} alt="" />
